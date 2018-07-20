@@ -31,7 +31,7 @@ If there are multiple possible correct answers, or the correct answer could chan
 
 `@possible_answers`
  - What is a typical number of jelly beans in a bag?
- - [How much does Abby's bag weigh? (correct)]
+ - [How much does Abby's bag weigh?]
  - Which color is the most frequent?
  - If Abby closed her eyes, shook up the bag, reached in and grabbed a jelly bean, how likely will it be red?
  - What is the typical weight of a jelly bean?
