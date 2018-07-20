@@ -30,14 +30,12 @@ If there is only one possible correct answer to the question, it is deterministi
 If there are multiple possible correct answers, or the correct answer could change, then it is a statistical question.
 
 `@possible_answers`
-- What is a typical number of jelly beans in a bag?
- - How much does Abby's bag weigh?
+ - What is a typical number of jelly beans in a bag?
+ - [How much does Abby's bag weigh? (correct)]
  - Which color is the most frequent?
- - If Abby closed her eyes, shook up the bag, reached in a grabbed a jelly bean, how likely will it be red?
+ - If Abby closed her eyes, shook up the bag, reached in and grabbed a jelly bean, how likely will it be red?
  - What is the typical weight of a jelly bean?
  - How are the jelly beans distributed according to color?
- - All of the above
- - None of the above
 
 `@feedbacks`
 Try again
