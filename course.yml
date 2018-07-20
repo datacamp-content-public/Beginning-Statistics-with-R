@@ -1,4 +1,4 @@
-title: Course Title Here
-description: A description of the course.
+title: Beginning Statistics with R
+description: This course will go over the most fundamental aspects of statistics. This is a good place to start if you are curious about statistics or nervous about math but need to develop you skills.
 programming_language: r
 from: 'r-base-prod:v1.0.0'
