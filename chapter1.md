@@ -73,28 +73,10 @@ rownames(Electorial_Votes) <- c(
 )
 colnames(Electorial_Votes) <- "Electorial_Votes"
 print(Electorial_Votes)
-Electorial_Votes <- as.vector(Electorial_Votes)
-```
-
-***
-
-## Print the electorial votes dataset on your screen
-
-```yaml
-type: NormalExercise
-xp: 20
-key: 55c61096c9
-```
-
-`@instructions`
-Type in Electorial_Votes to print the dataset
-
-`@hint`
-Type Electorial_Votes, then press the submit button
-
-`@solution`
-```{r}
-Electorial_Votes
+Electorial_Votes <- c(9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3)
+names(Electorial_Votes) <- c(
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+)
 ```
 
 ***
@@ -104,7 +86,6 @@ Electorial_Votes
 ```yaml
 type: NormalExercise
 xp: 20
-key: 180846ebad
 ```
 
 `@instructions`
@@ -125,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 4b0dfe8571
 ```
 
 `@instructions`
@@ -146,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: d694dfc287
 ```
 
 `@instructions`
@@ -167,7 +146,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 410543c45d
 ```
 
 `@instructions`
