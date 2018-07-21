@@ -75,25 +75,13 @@ colnames(Electorial_Votes) <- "Electorial_Votes"
 print(Electorial_Votes)
 ```
 
-`@sample_code`
-
-```{r}
-one_to_ten <- 1:10
-names(one_to_ten) <- c("one","two","three","four","five","six","seven","eight","nine","ten")
-one_to_ten
-max(one_to_ten)
-which.max(one_to_ten)
-min(one_to_ten)
-which.min(one_to_ten)
-```
-
 ***
 
 ## Print the electorial votes dataset on your screen
 
 ```yaml
 type: NormalExercise
-xp: 25
+xp: 20
 ```
 
 `@instructions`
@@ -109,6 +97,13 @@ Electorial_Votes
 
 ***
 
+## Find the largest number of electorial votes
+
+```yaml
+type: NormalExercise
+xp: 20
+```
+
 `@instructions`
 Find the largest number of electorial votes
 
@@ -119,3 +114,65 @@ Type max(Electorial_Votes), then press the submit button
 ```{r}
 max(Electorial_Votes)
 ```
+
+***
+
+## Find which state/district has the largest number of electorial votes
+
+```yaml
+type: NormalExercise
+xp: 20
+```
+
+`@instructions`
+Find which state/district has the largest number of electorial votes
+
+`@hint`
+Type which.max(Electorial_Votes), then press the submit button
+
+`@solution`
+```{r}
+which.max(Electorial_Votes)
+```
+
+***
+
+## Find the least number of electorial votes of state/districts that have a vote
+
+```yaml
+type: NormalExercise
+xp: 20
+```
+
+`@instructions`
+Find the least number of electorial votes
+
+`@hint`
+Type min(Electorial_Votes), then press the submit button
+
+`@solution`
+```{r}
+min(Electorial_Votes)
+```
+
+***
+
+## Find which state/district has the least number of electorial votes
+
+```yaml
+type: NormalExercise
+xp: 20
+```
+
+`@instructions`
+Find which state/district has the least number of electorial votes
+
+`@hint`
+Type which.min(Electorial_Votes), then press the submit button
+
+`@solution`
+```{r}
+which.max(Electorial_Votes)
+```
+
+
