@@ -87,6 +87,7 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 25
+key: dd03b69684
 ```
 
 `@instructions`
@@ -107,6 +108,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
+key: 7bcc0658f6
 ```
 
 `@instructions`
@@ -127,6 +129,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
+key: 0038ca9110
 ```
 
 `@instructions`
@@ -148,6 +151,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
+key: e83e873522
 ```
 
 `@instructions`
@@ -209,6 +213,7 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
+key: 39553e98c0
 ```
 
 `@instructions`
@@ -232,6 +237,7 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: 44ff981299
 ```
 
 `@instructions`
@@ -255,6 +261,7 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: 2e83ffdda5
 ```
 
 `@instructions`
@@ -414,6 +421,7 @@ names(gravity) <- c("MERCURY","VENUS","EARTH","MARS","JUPITER","SATURN","URANUS"
 ```yaml
 type: NormalExercise
 xp: 100
+key: da77794e1d
 ```
 
 `@instructions`
@@ -437,6 +445,7 @@ hist(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
+key: 5c7addef87
 ```
 
 `@instructions`
@@ -460,6 +469,7 @@ boxplot(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
+key: e0185daf00
 ```
 
 `@instructions`
@@ -483,6 +493,7 @@ IQR(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
+key: 605632c37f
 ```
 
 `@instructions`
