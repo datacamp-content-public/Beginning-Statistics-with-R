@@ -196,8 +196,8 @@ names(Electorial_Votes) <- c(
   "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
 )
 dotplot <- function(x){
-  stripcart(x,xaxt = "n",method = "stack")
-  axis(1,at = x)
+  stripchart(x,xaxt = "n",method = "stack")
+  axis(1,at = x,pos = 0.9)
 }
 ```
 
@@ -210,3 +210,62 @@ type: NormalExercise
 xp: 34
 ```
 
+`@instructions`
+
+Use the `dotplot()` function to create a dotplot of the electorial college votes
+
+`@hint`
+
+Type `dotplot(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+dotplot(Electorial_Votes)
+```
+
+***
+
+## Compute the mean electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `mean()` function to find the average number of electorial college votes
+
+`@hint`
+
+Type `mean(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+mean(Electorial_Votes)
+```
+
+***
+
+## Compute the median electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `median()` function to find the typical number of electorial college votes
+
+`@hint`
+
+Type `median(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+median(Electorial_Votes)
+```
