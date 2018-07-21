@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 3e40b60a9a
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: f77f1d46da
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 709de01506
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 854cb5094d
 ```
 
 `@instructions`
@@ -177,7 +173,7 @@ key: 47fc948fb1
 
 Dotplots are visual representations of data that enable quick insights into the collection of numbers. Dotplots are also called stripcharts.
 
-In R, the stripchart() function creates dotplots.
+In `R`, the `dotplot()` function creates dotplots.
 
 The mean of a dataset is the sum of all the numbers divided by the number of observations.
 The median is the middle value, or the average of the middle two values.
@@ -199,7 +195,7 @@ Electorial_Votes <- c(
 names(Electorial_Votes) <- c(
   "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
 )
-stripchart <- function(x){
+dotplot <- function(x){
   stripcart(x,xaxt = "n",method = "stack")
   axis(1,at = x)
 }
@@ -212,21 +208,20 @@ stripchart <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: f0eaf05412
 ```
 
 `@instructions`
 
-Use the `stripchart()` function to create a dotplot of the electorial college votes
+Use the `dotplot()` function to create a dotplot of the electorial college votes
 
 `@hint`
 
-Type `stripchart(Electorial_Votes)`, then press the submit button.
+Type `dotplot(Electorial_Votes)`, then press the submit button.
 
 `@solution`
 
 ```{r}
-stripchart(Electorial_Votes)
+dotplot(Electorial_Votes)
 ```
 
 ***
@@ -236,7 +231,6 @@ stripchart(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: c5a5cf5f37
 ```
 
 `@instructions`
@@ -260,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: ac8cca626e
 ```
 
 `@instructions`
