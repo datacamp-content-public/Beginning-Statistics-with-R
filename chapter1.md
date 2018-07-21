@@ -87,7 +87,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 25
-key: 3af5798389
 ```
 
 `@instructions`
@@ -108,7 +107,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 7dc5b71ff1
 ```
 
 `@instructions`
@@ -129,7 +127,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: dc867c8179
 ```
 
 `@instructions`
@@ -151,7 +148,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 708d6b85d8
 ```
 
 `@instructions`
@@ -213,7 +209,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: e3bb2040b6
 ```
 
 `@instructions`
@@ -237,7 +232,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 150e9ba7c9
 ```
 
 `@instructions`
@@ -261,7 +255,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 848cf7173e
 ```
 
 `@instructions`
@@ -373,9 +366,6 @@ dotplot(Electorial_Votes)
 - the data is skewed right
 - Good!
 
-
-
-
 ---
 ## See the shape, center and variability of the data
 
@@ -424,7 +414,6 @@ names(gravity) <- c("MERCURY","VENUS","EARTH","MARS","JUPITER","SATURN","URANUS"
 ```yaml
 type: NormalExercise
 xp: 100
-key: 29945ae41b
 ```
 
 `@instructions`
@@ -448,7 +437,6 @@ hist(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: cdb8ca3f61
 ```
 
 `@instructions`
@@ -472,7 +460,6 @@ boxplot(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: b7611a1817
 ```
 
 `@instructions`
@@ -496,7 +483,6 @@ IQR(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 1f3325b145
 ```
 
 `@instructions`
