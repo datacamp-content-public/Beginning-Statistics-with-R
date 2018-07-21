@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: eded2eb45c
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 9c786fec98
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 8f42ac15f4
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 5d03f1e516
 ```
 
 `@instructions`
@@ -199,6 +195,10 @@ Electorial_Votes <- c(
 names(Electorial_Votes) <- c(
   "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
 )
+stripchart <- function(x){
+  stripcart(x,xaxt = "n",method = "stack")
+  axis(1,at = x)
+}
 ```
 
 ***
@@ -208,7 +208,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 34
-key: 182e639d0d
 ```
 
 `@instructions`
@@ -232,7 +231,6 @@ stripchart(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 50f231ca1e
 ```
 
 `@instructions`
@@ -256,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 58e4ec5cb7
 ```
 
 `@instructions`
