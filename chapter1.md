@@ -42,7 +42,7 @@ Try again
 
 ---
 
-## Insert exercise title here
+## Maximum and minimum values
 
 ```yaml
 type: BulletExercise 
@@ -52,10 +52,10 @@ key: 8fb45ad353
 
 If you type in the name of a dataset, it will print out on the screen.
 
-If you enter max(data), the maximum value will be returned (what is the max value).
-If you enter which.max(data), the maximum value will be returned (which one has the maximum).
-If you enter min(data), the maximum value will be returned (what is the min value).
-If you enter which.min(data), the maximum value will be returned (which one has the minimum).
+* If you enter max(data), the maximum value will be returned (what is the max value).
+* If you enter which.max(data), the maximum value will be returned (which one has the maximum).
+* If you enter min(data), the maximum value will be returned (what is the min value).
+* If you enter which.min(data), the maximum value will be returned (which one has the minimum).
 
 The dataset Electorial_Votes is loaded for you.
 -- Print the Electorial_Votes dataset on the screen
@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 0fc6a896da
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 13f8570b64
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 7868ec4f6f
 ```
 
 `@instructions`
@@ -145,11 +142,11 @@ min(Electorial_Votes)
 ***
 
 ## Find which state/district has the least number of electorial votes
+## Note: There are multiple states with the minimum number of electorial colleges, the which.min() function will grab the first one
 
 ```yaml
 type: NormalExercise
 xp: 20
-key: ccf5b6d6ee
 ```
 
 `@instructions`
@@ -162,5 +159,18 @@ Type which.min(Electorial_Votes), then press the submit button
 ```{r}
 which.max(Electorial_Votes)
 ```
+
+---
+
+## Using dotplots/stripcharts to see the data
+
+```yaml
+type: BulletExercise
+lang: r
+key: 7d66564652
+xp: 100
+```
+
+Dotplots are an quick way to see aspects of a dataset.
 
 
