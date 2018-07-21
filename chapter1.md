@@ -58,11 +58,11 @@ If you type in the name of a dataset, it will print out on the screen.
 * If you enter which.min(data), the maximum value will be returned (which one has the minimum).
 
 The dataset Electorial_Votes is loaded for you.
--- Print the Electorial_Votes dataset on the screen
--- Find the largest number of electorial votes
--- Find which state/district that has the most electorial votes
--- Find the smallest number of electorial votes
--- Find which state/district that has the fewest electorial votes
+* Print the Electorial_Votes dataset on the screen
+* Find the largest number of electorial votes
+* Find which state/district that has the most electorial votes
+* Find the smallest number of electorial votes
+* Find which state/district that has the fewest electorial votes
 
 `@pre_exercise_code`
 
@@ -162,15 +162,106 @@ which.max(Electorial_Votes)
 
 ---
 
-## Using dotplots/stripcharts to see the data
+## Using dotplots/stripcharts to see your data
 
 ```yaml
 type: BulletExercise
 lang: r
-key: 7d66564652
 xp: 100
+key: 47fc948fb1
 ```
 
-Dotplots are an quick way to see aspects of a dataset.
+Dotplots are visual representations of data that enable quick insights into the collection of numbers. Dotplots are also called stripcharts.
 
+In R, the stripchart() function creates dotplots.
 
+The mean of a dataset is the sum of all the numbers divided by the number of observations.
+The median is the middle value, or the average of the middle two values.
+The mean and median are ways to describe the center of data using only one number.
+
+The median is better than the mean when the data is very skewwed.
+The mean is better than the median when there are very few distinct observations.
+In most situations, the mean is preferred.
+
+The `mean()` function computes the mean.
+The `median()` function computes the median.
+
+`@pre_exercise_code`
+
+```{r}
+Electorial_Votes <- c(
+  9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3
+)
+names(Electorial_Votes) <- c(
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+)
+```
+
+***
+
+## Create a dotplot/stripchart for the electorial votes dataset
+
+```yaml
+type: NormalExercise
+xp: 34
+```
+
+`@instructions`
+
+Use the `stripchart()` function to create a dotplot of the electorial college votes
+
+`@hint`
+
+Type `stripchart(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+stripchart(Electorial_Votes)
+```
+
+***
+
+## Compute the mean electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `mean()` function to find the average number of electorial college votes
+
+`@hint`
+
+Type `mean(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+mean(Electorial_Votes)
+```
+
+***
+
+## Compute the median electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `median()` function to find the typical number of electorial college votes
+
+`@hint`
+
+Type `median(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+median(Electorial_Votes)
+```
