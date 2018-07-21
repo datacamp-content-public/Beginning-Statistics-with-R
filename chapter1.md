@@ -83,6 +83,7 @@ Electorial_Votes <- as.vector(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 55c61096c9
 ```
 
 `@instructions`
@@ -103,6 +104,7 @@ Electorial_Votes
 ```yaml
 type: NormalExercise
 xp: 20
+key: 180846ebad
 ```
 
 `@instructions`
@@ -123,6 +125,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 4b0dfe8571
 ```
 
 `@instructions`
@@ -143,6 +146,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: d694dfc287
 ```
 
 `@instructions`
@@ -163,6 +167,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 410543c45d
 ```
 
 `@instructions`
