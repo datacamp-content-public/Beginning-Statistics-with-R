@@ -50,9 +50,19 @@ xp: 100
 key: 8fb45ad353   
 ```
 
+If you type in the name of a dataset, it will print out on the screen.
 
-If you
+If you enter max(data), the maximum value will be returned (what is the max value).
+If you enter which.max(data), the maximum value will be returned (which one has the maximum).
+If you enter min(data), the maximum value will be returned (what is the min value).
+If you enter which.min(data), the maximum value will be returned (which one has the minimum).
 
+The dataset Electorial_Votes is loaded for you.
+-- Print the Electorial_Votes dataset on the screen
+-- Find the largest number of electorial votes
+-- Find which state/district that has the most electorial votes
+-- Find the smallest number of electorial votes
+-- Find which state/district that has the fewest electorial votes
 
 `@pre_exercise_code`
 
@@ -65,10 +75,47 @@ colnames(Electorial_Votes) <- "Electorial_Votes"
 print(Electorial_Votes)
 ```
 
-
 `@sample_code`
 
 ```{r}
-
+one_to_ten <- 1:10
+names(one_to_ten) <- c("one","two","three","four","five","six","seven","eight","nine","ten")
+one_to_ten
+max(one_to_ten)
+which.max(one_to_ten)
+min(one_to_ten)
+which.min(one_to_ten)
 ```
 
+***
+
+## Print the electorial votes dataset on your screen
+
+```yaml
+type: NormalExercise
+xp: 25
+```
+
+`@instructions`
+Type in Electorial_Votes to print the dataset
+
+`@hint`
+Type Electorial_Votes, then press the submit button
+
+`@solution`
+```{r}
+Electorial_Votes
+```
+
+***
+
+`@instructions`
+Find the largest number of electorial votes
+
+`@hint`
+Type max(Electorial_Votes), then press the submit button
+
+`@solution`
+```{r}
+max(Electorial_Votes)
+```
