@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: eb81f91dc8
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 2ecbc0105d
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 51948004a4
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 7b94d5bb57
 ```
 
 `@instructions`
@@ -212,7 +208,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 901d0c7cd5
 ```
 
 `@instructions`
@@ -236,7 +231,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 7e3de1d46f
 ```
 
 `@instructions`
@@ -260,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 10ee39ee5c
 ```
 
 `@instructions`
@@ -325,3 +318,45 @@ dotplot(Electorial_Votes)
  - Good!
  - look at the dotplot again
  - look at the dotplot again
+ 
+---
+
+## Use a dotplot to select the measure of central tendency
+
+```yaml
+type: MultipleChoiceExercise
+lang: r
+xp: 25
+key: 0fd6e00cc0
+```
+
+* The median is a better description of the central tendency when the data is skewed.
+* The mean is a better description of the central tendency when there are few distinct observations.
+* In general, the mean is preferred.
+
+Look at the dotplot and decide if the mean or median is a better description of the data' central tendency.
+
+`@pre_exercise_code`
+
+```{r}
+Electorial_Votes <- c(
+  9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3
+)
+names(Electorial_Votes) <- c(
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+)
+par(mar = c(0,0,0,0),oma = c(0,0,0,0))
+dotplot <- function(x){
+  stripchart(x,xaxt = "n",method = "stack")
+  axis(1,at = x,pos = 0.9)
+}
+dotplot(Electorial_Votes)
+```
+
+`@possible_answers`
+- mean
+ - [median]
+ 
+`@feedback`
+ - the data is skewed right
+ - Good!
