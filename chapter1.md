@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: fce829bd5e
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: f32a1586ce
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 3b32eff47e
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 577807031b
 ```
 
 `@instructions`
@@ -212,7 +208,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 7f4a3364a0
 ```
 
 `@instructions`
@@ -227,4 +222,50 @@ Type `dotplot(Electorial_Votes)`, then press the submit button.
 
 ```{r}
 dotplot(Electorial_Votes)
+```
+
+***
+
+## Compute the mean electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `mean()` function to find the average number of electorial college votes
+
+`@hint`
+
+Type `mean(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+mean(Electorial_Votes)
+```
+
+***
+
+## Compute the median electorial college
+
+```yaml
+type: NormalExercise
+xp: 33
+```
+
+`@instructions`
+
+Use the `median()` function to find the typical number of electorial college votes
+
+`@hint`
+
+Type `median(Electorial_Votes)`, then press the submit button.
+
+`@solution`
+
+```{r}
+median(Electorial_Votes)
 ```
