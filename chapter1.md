@@ -86,6 +86,7 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
+key: 3e40b60a9a
 ```
 
 `@instructions`
@@ -106,6 +107,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: f77f1d46da
 ```
 
 `@instructions`
@@ -126,6 +128,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 709de01506
 ```
 
 `@instructions`
@@ -147,6 +150,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 854cb5094d
 ```
 
 `@instructions`
@@ -208,6 +212,7 @@ stripchart <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
+key: f0eaf05412
 ```
 
 `@instructions`
@@ -231,6 +236,7 @@ stripchart(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: c5a5cf5f37
 ```
 
 `@instructions`
@@ -254,6 +260,7 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: ac8cca626e
 ```
 
 `@instructions`
