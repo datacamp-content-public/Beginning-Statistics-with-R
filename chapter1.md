@@ -86,6 +86,7 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
+key: eded2eb45c
 ```
 
 `@instructions`
@@ -106,6 +107,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 9c786fec98
 ```
 
 `@instructions`
@@ -126,6 +128,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 8f42ac15f4
 ```
 
 `@instructions`
@@ -147,6 +150,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 5d03f1e516
 ```
 
 `@instructions`
@@ -204,6 +208,7 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 34
+key: 182e639d0d
 ```
 
 `@instructions`
@@ -227,6 +232,7 @@ stripchart(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: 50f231ca1e
 ```
 
 `@instructions`
@@ -250,6 +256,7 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: 58e4ec5cb7
 ```
 
 `@instructions`
