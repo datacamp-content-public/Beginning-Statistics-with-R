@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 114dfbbdc4
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: c5f93b7c62
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 73b738a287
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 3efd594881
 ```
 
 `@instructions`
@@ -212,7 +208,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 1ae58b7838
 ```
 
 `@instructions`
@@ -236,7 +231,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 7977e95ddd
 ```
 
 `@instructions`
@@ -260,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 5ce97d9fe7
 ```
 
 `@instructions`
@@ -313,12 +306,16 @@ dotplot <- function(x){
 dotplot(Electorial_Votes)
 ```
 
+`@instructions`
+
+Look at the dotplot and decide if the electorial vote numbers are skew left, skew right or symmetric.
+Then decide if the mean or the median would be a better way to describe the center of the data.
+
 ***
 
 ```yaml
 type: MultipleChoiceExercise
 xp: 50
-key: 260312ca37
 ```
 
 ## Is the electorial vote data skew left, skew right, symmetric, or none of these?
