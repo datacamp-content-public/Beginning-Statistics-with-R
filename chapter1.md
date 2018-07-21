@@ -37,7 +37,12 @@ If there are multiple possible correct answers, or the correct answer could chan
  - How are the jelly beans distributed according to color?
 
 `@feedbacks`
-Try again
+ - Since different bags can have different numbers of jelly beans, this is a statistical question.
+ - Good job! Since there is only one possible answer, this is a deterministic question.
+ - Since there are multiple colors of jelly beans, this is a statistical question.
+ - Since Abby could grab any color of jelly bean, this is a statistical question.
+ - Some jelly beans will be bigger than others, this is a statistical question.
+ - Since there are multiple colors of jelly beans, this is a statistical question.
 
 ---
 
@@ -82,7 +87,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 25
-key: f0ea1d06fc
 ```
 
 `@instructions`
@@ -103,7 +107,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 84df4f07a2
 ```
 
 `@instructions`
@@ -124,7 +127,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 62d51c5359
 ```
 
 `@instructions`
@@ -146,7 +148,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 6fe783a26e
 ```
 
 `@instructions`
@@ -196,7 +197,7 @@ names(Electorial_Votes) <- c(
   "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
 )
 dotplot <- function(x){
-  stripchart(x,xaxt = "n",method = "stack")
+  stripchart(x,xaxt = "n",method = "stack",pch = 19,offset = 1)
   axis(1,at = x,pos = 0.9)
 }
 ```
@@ -208,7 +209,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 66cfab433b
 ```
 
 `@instructions`
@@ -232,7 +232,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: ac86b61019
 ```
 
 `@instructions`
@@ -256,7 +255,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: ce0ea49821
 ```
 
 `@instructions`
@@ -304,23 +302,25 @@ names(Electorial_Votes) <- c(
 )
 par(mar = c(0,0,0,0),oma = c(0,0,0,0))
 dotplot <- function(x){
-  stripchart(x,xaxt = "n",method = "stack")
+  stripchart(x,xaxt = "n",method = "stack",pch = 19,offset = 1)
   axis(1,at = x,pos = 0.9)
 }
 dotplot(Electorial_Votes)
 ```
 
 `@possible_answers`
+
 - skew left
  - [skew right]
  - symmetric
  - neither skewed nor symmetric
  
-`@feedback`
- - look at the dotplot again
+`@feedbacks`
+
+ - Look at the dotplot again, the tail is going to the right.
  - Good!
- - look at the dotplot again
- - look at the dotplot again
+ - Look at the dotplot again, the left side and the right sides of the dotplot look different.
+ - Look at the dotplot again, most of the data is on the left but there are a few points trailing to the right.
  
 ---
 
@@ -350,16 +350,154 @@ names(Electorial_Votes) <- c(
 )
 par(mar = c(0,0,0,0),oma = c(0,0,0,0))
 dotplot <- function(x){
-  stripchart(x,xaxt = "n",method = "stack")
+  stripchart(x,xaxt = "n",method = "stack",pch = 19,offset = 1)
   axis(1,at = x,pos = 0.9)
 }
 dotplot(Electorial_Votes)
 ```
 
 `@possible_answers`
+
 - mean
- - [median]
+- [median]
  
-`@feedback`
- - the data is skewed right
- - Good!
+`@feedbacks`
+
+- the data is skewed right
+- Good!
+
+
+
+
+---
+## See the shape, center and variability of the data
+
+```yaml
+type: BulletExercise
+key: ea46221337
+lang: r
+xp: 100
+```
+
+Graphs and plots can help you quickly see the shape, central tendency and variability of data.
+
+* Histograms use bars to which range of values are more common (`hist()`).
+* Boxplots give a visual summary of the data are, showing the maximum value, minimum value, median, and interquartiles (`boxplot()`).
+
+Interquartiles are the middle values between the median and the most extreme values.
+* Q1 is the median value of the data between the minimum and the median.
+* Q3 is the median value of the data between the median and the maximum value.
+
+There are many ways to measure variability. Two of the easiest to compute by hand are the interquartile range (`IQR()`), and the median absolute deviation (`mad()`).
+* IQR = Q3 - Q1
+* mad is the median of the difference between values and the median
+
+For each planet in our solar system, the acceleration due to gravity is in the `gravity` dataset.
+* Create a histogram of gravity acceleration
+* Create a boxplot of gravity acceleration
+* Compute the `IQR()` of gravity acceleration
+* Compute the `mad()` of gravity acceleration
+
+`@pre_exercise_code`
+```{r}
+# data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/ 2018-07-21
+gravity <- matrix(c(3.7,8.9,9.8,3.7,23.1,9,8.7,11),ncol = 1)
+rownames(gravity) <- c("MERCURY","VENUS","EARTH","MARS","JUPITER","SATURN","URANUS","NEPTUNE")
+colnames(gravity) <- "gravity (m/s^2)"
+print(gravity)
+
+gravity <- c(3.7,8.9,9.8,3.7,23.1,9,8.7,11)
+names(gravity) <- c("MERCURY","VENUS","EARTH","MARS","JUPITER","SATURN","URANUS","NEPTUNE")
+```
+
+***
+
+### Create a histogram
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Create a histogram of the gravity data
+`@hint`
+Use the `hist()` function.
+`@solution`
+```{r}
+hist(gravity)
+```
+
+`@sct`
+```{r}
+hist(gravity)
+```
+
+***
+
+### Create a boxplot
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Create a boxplot of the gravity data
+`@hint`
+Use the `boxplot()` function.
+`@solution`
+```{r}
+boxplot(gravity)
+```
+
+`@sct`
+```{r}
+boxplot(gravity)
+```
+
+***
+
+### Compute the interquartile range
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Compute the interquartile range of the gravity data
+`@hint`
+Use the `IQR()` function.
+`@solution`
+```{r}
+IQR(gravity)
+```
+
+`@sct`
+```{r}
+IQR(gravity)
+```
+
+***
+
+### Compute the median absolute deviation
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Compute the median absolute deviation of the gravity data
+`@hint`
+Use the `mad()` function.
+`@solution`
+```{r}
+mad(gravity)
+```
+
+`@sct`
+```{r}
+mad(gravity)
+```
