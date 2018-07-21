@@ -39,3 +39,36 @@ If there are multiple possible correct answers, or the correct answer could chan
 
 `@feedbacks`
 Try again
+
+
+---
+## <<<New Exercise>>>
+
+```yaml
+type: MultipleChoiceExercise
+key: 982e1a1858
+lang: r
+xp: 50
+skills: 1
+```
+
+The max() function will show you the maximum value of a dataset.
+
+The which.max() function will show which entry has the maximum value
+
+`@instructions`
+
+Use the functions to answer the questions.
+
+`@hint`
+
+`@pre_exercise_code`
+```{r}
+Electoral_Votes <- c(9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3)
+names(Electoral_Votes) <- c("Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming")
+```
+
+`@sct`
+```{r}
+max(Electoral_Votes)
+```
