@@ -87,7 +87,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 25
-key: 48122acf44
 ```
 
 `@instructions`
@@ -108,7 +107,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 9cbb70142e
 ```
 
 `@instructions`
@@ -129,7 +127,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 2ddf26ffdb
 ```
 
 `@instructions`
@@ -151,7 +148,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 25
-key: 03393a4039
 ```
 
 `@instructions`
@@ -213,7 +209,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 51734ec4ed
 ```
 
 `@instructions`
@@ -237,7 +232,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 6898a2e6c0
 ```
 
 `@instructions`
@@ -261,7 +255,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: bb637b2514
 ```
 
 `@instructions`
@@ -421,7 +414,6 @@ names(gravity) <- c("MERCURY","VENUS","EARTH","MARS","JUPITER","SATURN","URANUS"
 ```yaml
 type: NormalExercise
 xp: 100
-key: 01574edc36
 ```
 
 `@instructions`
@@ -445,7 +437,6 @@ hist(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: e417f37287
 ```
 
 `@instructions`
@@ -469,7 +460,6 @@ boxplot(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 4d8201c7ca
 ```
 
 `@instructions`
@@ -493,7 +483,6 @@ IQR(gravity)
 ```yaml
 type: NormalExercise
 xp: 100
-key: e4a5ac6479
 ```
 
 `@instructions`
@@ -529,6 +518,7 @@ skills: 1
 
 `@pre_exercise_code`
 ```{r}
+# https://www.teamusa.org/road-to-rio-2016/team-usa/athletes 2018-07-21
 Rio <- c(
 "DC","DC","DC","VI","Ala","Alaska","Alaska","Ariz","Ariz","Ariz","Ariz","Ariz","Ariz","Ariz","Ariz","Ariz","Ark","Ark","Ark","Ark","Ark","Ark","Calf","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Calif","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Colo","Conn","Conn","Conn","Conn","Conn","Conn","Conn","Conn","Del","Del","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Fla","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Ga","Hawaii","Hawaii","Hawaii","Hawaii","Hawaii","Idaho","Idaho","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ill","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Ind","Iowa","Iowa","Iowa","Kan","Kan","Kan","Ky","Ky","La","La","La","Maine","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Mass","Md","Md","Md","Md","Md","Md","Md","Md","Md","Md","Md","Mich","Mich","Mich","Mich","Mich","Mich","Mich","Mich","Mich","Mich","Minn","Minn","Minn","Minn","Minn","Minn","Minn","Minn","Minn","Minn","Minn","Miss","Miss","Miss","Miss","Mo","Mo","Mo","Mo","Mo","Mo","Mo","Mo","Mo","Mo","Mo","NC","NC","NC","NC","NH","NH","NH","NH","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NJ","NM","NM","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","NY","Neb","Neb","Neb","Neb","Nev","Nev","Nev","Nev","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Ohio","Okla","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Ore","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Pa","Penn","RI","RI","RI","RI","SC","SC","SD","Tenn","Tenn","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Texas","Utah","Utah","Utah","Utah","Va","Va","Va","Va","Va","Va","Va","Va","Va","Va","Va","Va","Va","Va","Vt","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wash","Wis","Wis","Wis","Wis","Wis",
 )
