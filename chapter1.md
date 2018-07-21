@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 4609c3ff2c
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 094aa1bdbc
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: c98d14e3fe
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 077862c7f1
 ```
 
 `@instructions`
@@ -164,4 +160,29 @@ Type which.min(Electorial_Votes), then press the submit button
 which.max(Electorial_Votes)
 ```
 
+---
+
+## Using dotplots/stripcharts to see your data
+
+```yaml
+type: BulletExercise
+lang: r
+xp: 100
+key: 47fc948fb1
+```
+
+Dotplots are visual representations of data that enable quick insights into the collection of numbers. Dotplots are also called stripcharts.
+
+In `R`, the `dotplot()` function creates dotplots.
+
+The mean of a dataset is the sum of all the numbers divided by the number of observations.
+The median is the middle value, or the average of the middle two values.
+The mean and median are ways to describe the center of data using only one number.
+
+The median is better than the mean when the data is very skewwed.
+The mean is better than the median when there are very few distinct observations.
+In most situations, the mean is preferred.
+
+The `mean()` function computes the mean.
+The `median()` function computes the median.
 
