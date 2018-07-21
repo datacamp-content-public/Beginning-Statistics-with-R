@@ -86,6 +86,7 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
+key: 4e4710bb25
 ```
 
 `@instructions`
@@ -106,6 +107,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 8118434ab1
 ```
 
 `@instructions`
@@ -126,6 +128,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 66fec5b885
 ```
 
 `@instructions`
@@ -147,6 +150,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 312ff2d8e9
 ```
 
 `@instructions`
@@ -208,6 +212,7 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
+key: 089905d6ff
 ```
 
 `@instructions`
@@ -231,6 +236,7 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: e988a2fe94
 ```
 
 `@instructions`
@@ -254,6 +260,7 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
+key: a7ee623b02
 ```
 
 `@instructions`
