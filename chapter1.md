@@ -275,7 +275,7 @@ median(Electorial_Votes)
 ## Use a dotplot to determine skew
 
 ```yaml
-type: BulletExercise
+type: MultipleChoiceExercise
 lang: r
 xp: 25
 key: 6d4cc518f0
@@ -318,5 +318,4 @@ Then decide if the mean or the median would be a better way to describe the cent
  - symmetric
  - neither skewed nor symmetric
  
- ***
 
