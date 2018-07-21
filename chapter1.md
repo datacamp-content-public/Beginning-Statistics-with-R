@@ -82,6 +82,7 @@ print(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: fc6430d970
 ```
 
 `@instructions`
@@ -102,6 +103,7 @@ Electorial_Votes
 ```yaml
 type: NormalExercise
 xp: 20
+key: 78db38854d
 ```
 
 `@instructions`
@@ -122,6 +124,7 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 903a4285e8
 ```
 
 `@instructions`
@@ -142,6 +145,7 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: 0f1d3e81d3
 ```
 
 `@instructions`
@@ -162,6 +166,7 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
+key: b85ab5f825
 ```
 
 `@instructions`
