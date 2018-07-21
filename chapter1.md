@@ -11,7 +11,6 @@ xp: 50
 key: 5e51bfcb9d   
 ```
 
-
 A statistical question is a question that can be answered by collecting data. Almost all data has some variability. Variability means that repeated measurements of similar items give different numbers (the numbers vary).
 
 A deterministic question is a question with one exact answer. The number never changes.
@@ -50,15 +49,12 @@ xp: 100
 key: 8fb45ad353   
 ```
 
-If you type in the name of a dataset, it will print out on the screen.
-
 * If you enter max(data), the maximum value will be returned (what is the max value).
 * If you enter which.max(data), the maximum value will be returned (which one has the maximum).
 * If you enter min(data), the maximum value will be returned (what is the min value).
 * If you enter which.min(data), the maximum value will be returned (which one has the minimum).
 
 The dataset Electorial_Votes is loaded for you.
-* Print the Electorial_Votes dataset on the screen
 * Find the largest number of electorial votes
 * Find which state/district that has the most electorial votes
 * Find the smallest number of electorial votes
@@ -85,8 +81,7 @@ names(Electorial_Votes) <- c(
 
 ```yaml
 type: NormalExercise
-xp: 20
-key: 0d8653c246
+xp: 25
 ```
 
 `@instructions`
@@ -106,8 +101,7 @@ max(Electorial_Votes)
 
 ```yaml
 type: NormalExercise
-xp: 20
-key: 01b82d4b2d
+xp: 25
 ```
 
 `@instructions`
@@ -127,8 +121,7 @@ which.max(Electorial_Votes)
 
 ```yaml
 type: NormalExercise
-xp: 20
-key: 7f07c87d46
+xp: 25
 ```
 
 `@instructions`
@@ -149,8 +142,7 @@ min(Electorial_Votes)
 
 ```yaml
 type: NormalExercise
-xp: 20
-key: 4f67106f9e
+xp: 25
 ```
 
 `@instructions`
@@ -212,7 +204,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: aa523bb3b8
 ```
 
 `@instructions`
@@ -236,7 +227,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 83cffc5170
 ```
 
 `@instructions`
@@ -260,7 +250,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 1d2b6609bb
 ```
 
 `@instructions`
