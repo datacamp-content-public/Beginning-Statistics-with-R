@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 23cf81b01e
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: fc2496f38d
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 68233f1da2
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 366f1bdbff
 ```
 
 `@instructions`
@@ -212,7 +208,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: 961c75e29b
 ```
 
 `@instructions`
@@ -236,7 +231,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 5a7de01d09
 ```
 
 `@instructions`
@@ -260,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 641eea3a9b
 ```
 
 `@instructions`
@@ -282,7 +275,7 @@ median(Electorial_Votes)
 ## Use a dotplot to determine skew
 
 ```yaml
-type: MultipleChoiceExercise
+type: PureMultipleChoiceExercise 
 lang: r
 xp: 25
 key: 6d4cc518f0
