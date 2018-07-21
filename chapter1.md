@@ -86,7 +86,6 @@ names(Electorial_Votes) <- c(
 ```yaml
 type: NormalExercise
 xp: 20
-key: 4b267d33b9
 ```
 
 `@instructions`
@@ -107,7 +106,6 @@ max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: e951fab556
 ```
 
 `@instructions`
@@ -128,7 +126,6 @@ which.max(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 5dfc3ea672
 ```
 
 `@instructions`
@@ -150,7 +147,6 @@ min(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 20
-key: 30b7f42558
 ```
 
 `@instructions`
@@ -177,13 +173,13 @@ key: 47fc948fb1
 
 Dotplots are visual representations of data that enable quick insights into the collection of numbers. Dotplots are also called stripcharts.
 
-In `R`, the `dotplot()` function creates dotplots.
+The `dotplot()` function creates dotplots.
 
 The mean of a dataset is the sum of all the numbers divided by the number of observations.
 The median is the middle value, or the average of the middle two values.
 The mean and median are ways to describe the center of data using only one number.
 
-The median is better than the mean when the data is very skewwed.
+The median is better than the mean when the data is very skewed.
 The mean is better than the median when there are very few distinct observations.
 In most situations, the mean is preferred.
 
@@ -212,7 +208,6 @@ dotplot <- function(x){
 ```yaml
 type: NormalExercise
 xp: 34
-key: aa9d2b32e2
 ```
 
 `@instructions`
@@ -236,7 +231,6 @@ dotplot(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: dd3d18d0b3
 ```
 
 `@instructions`
@@ -260,7 +254,6 @@ mean(Electorial_Votes)
 ```yaml
 type: NormalExercise
 xp: 33
-key: 729e7ec558
 ```
 
 `@instructions`
@@ -276,3 +269,81 @@ Type `median(Electorial_Votes)`, then press the submit button.
 ```{r}
 median(Electorial_Votes)
 ```
+
+---
+
+## Use a dotplot to determine skew
+
+```yaml
+type: BulletExercise
+lang: r
+xp: 25
+key: 6d4cc518f0
+```
+
+Data is called skewwed if to one side there is a lot more variability than on the other side.
+Symmetric data has approximately equal variance on the left and on the right.
+
+* Dotplots of skewed right data have a tail going to the right.
+* Dotplots of skewed left data have a tail going to the left.
+* Symmetric data has approximately the same shape on the left and on the right.
+
+Look at the dotplot and decide if the electorial vote numbers are skew left, skew right or symmetric.
+
+`@pre_exercise_code`
+
+```{r}
+Electorial_Votes <- c(
+  9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3
+)
+names(Electorial_Votes) <- c(
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+)
+dotplot <- function(x){
+  stripchart(x,xaxt = "n",method = "stack")
+  axis(1,at = x,pos = 0.9)
+}
+dotplot(Electorial_Votes)
+```
+
+***
+
+```yaml
+type: MultipleChoiceExercise
+xp: 50
+```
+
+## Is the electorial vote data skew left, skew right, symmetric, or none of these?
+
+`@instructions`
+
+Look at the dotplot and decide if the electorial vote numbers are skew left, skew right or symmetric.
+
+`@possible_answers`
+
+ - skew left
+ - [skew right]
+ - symmetric
+ - neither skewed nor symmetric
+ 
+ ***
+
+```yaml
+type: MultipleChoiceExercise
+xp: 50
+```
+
+## Would the mean or the median be a better description of the center of the data?
+
+`@instructions`
+
+Look at the dotplot and decide if the electorial vote numbers center would be better described by the mean or the median.
+
+`@possible_answers`
+
+ - mean
+ - median
+ 
+ `@hint`
+ 
+ The data is skew right, so the mean is a poor choice.
