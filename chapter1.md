@@ -56,8 +56,8 @@ key: 8fb45ad353
 
 * max(data): the maximum value will be returned (what is the max value).
 * which.max(data): the entry with the maximum value will be returned (which one has the maximum).
-* min(data): the maximum value will be returned (what is the min value).
-* which.min(data): the entry with the maximum value will be returned (which one has the minimum).
+* min(data): the minimum value will be returned (what is the min value).
+* which.min(data): the entry with the minimum value will be returned (which one has the minimum).
 
 The dataset Electorial_Votes is loaded for you.
 * Find the largest number of electorial votes
