@@ -176,7 +176,7 @@ xp: 100
 key: 47fc948fb1
 ```
 
-Dotplots are visual representations of data that enable quick insights into the collection of numbers. Dotplots are also called stripcharts.
+Dotplots are visual representations of data enabling quick insights into the numbers. Dotplots are also called stripcharts.
 
 The `dotplot()` function creates dotplots.
 
