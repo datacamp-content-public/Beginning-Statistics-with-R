@@ -167,7 +167,7 @@ which.max(Electorial_Votes)
 
 ---
 
-## Using dotplots/stripcharts to see your data
+## Using dotplots to see your data
 
 ```yaml
 type: BulletExercise
@@ -176,20 +176,20 @@ xp: 100
 key: 47fc948fb1
 ```
 
-Dotplots are visual representations of data enabling quick insights into the numbers. Dotplots are also called stripcharts.
+Dotplots are visual representations of data enabling quick insights into the numbers.
 
 The `dotplot()` function creates dotplots.
 
+The mean and median are ways to describe the center of data using only one number.
 The mean of a dataset is the sum of all the numbers divided by the number of observations.
 The median is the middle value, or the average of the middle two values.
-The mean and median are ways to describe the center of data using only one number.
 
 The median is better than the mean when the data is very skewed.
 The mean is better than the median when there are very few distinct observations.
 In most situations, the mean is preferred.
 
-The `mean()` function computes the mean.
-The `median()` function computes the median.
+`mean()` computes the mean.
+`median()` computes the median.
 
 `@pre_exercise_code`
 
