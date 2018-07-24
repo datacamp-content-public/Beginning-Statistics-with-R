@@ -184,9 +184,7 @@ The mean and median are ways to describe the center of data using only one numbe
 The mean of a dataset is the sum of all the numbers divided by the number of observations.
 The median is the middle value, or the average of the middle two values.
 
-The median is better than the mean when the data is very skewed.
-The mean is better than the median when there are very few distinct observations.
-In most situations, the mean is preferred.
+The median is better than the mean when the data is skewed.
 
 `mean()` computes the mean.
 `median()` computes the median.
