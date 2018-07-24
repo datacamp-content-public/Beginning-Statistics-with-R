@@ -294,6 +294,8 @@ Symmetric data has approximately equal variance on the left and on the right.
 * Dotplots of skewed left data have a tail going to the left.
 * Symmetric data has approximately the same shape on the left and on the right.
 
+`@instructions`
+
 Look at the dotplot and decide if the electorial vote numbers are skew left, skew right or symmetric.
 
 `@pre_exercise_code`
