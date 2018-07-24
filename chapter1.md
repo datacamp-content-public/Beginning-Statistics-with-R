@@ -384,7 +384,7 @@ xp: 100
 Graphs and plots can help you quickly see the shape, central tendency and variability of data.
 
 * Histograms use bars to which range of values are more common (`hist()`).
-* Boxplots give a visual summary of the data are, showing the maximum value, minimum value, median, and interquartiles (`boxplot()`).
+* Boxplots give a visual summary of the data; showing the maximum, minimum, median, and interquartiles (`boxplot()`).
 
 Interquartiles are the middle values between the median and the most extreme values.
 * Q1 is the median value of the data between the minimum and the median.
@@ -393,6 +393,8 @@ Interquartiles are the middle values between the median and the most extreme val
 There are many ways to measure variability. Two of the easiest to compute by hand are the interquartile range (`IQR()`), and the median absolute deviation (`mad()`).
 * IQR = Q3 - Q1
 * mad is the median of the difference between values and the median
+
+`@instructions`
 
 For each planet in our solar system, the acceleration due to gravity is in the `gravity` dataset.
 * Create a histogram of gravity acceleration
